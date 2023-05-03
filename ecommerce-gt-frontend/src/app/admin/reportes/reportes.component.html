@@ -1,0 +1,18 @@
+<app-navbar-admin></app-navbar-admin>
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-1">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Reportes</h1>
+        </div>
+    </div>
+</header>
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-dark" (click)="reporteProdMasVendido()" type="button">Top 10 productos más vendidos</button>
+    <button class="btn btn-dark" (click)="reporteClienteMasGanancia()" type="button">Top 5 clientes que más ganancias por compras han generado</button>
+    <button class="btn btn-dark" (click)="reporteClienteMasVentas()"  type="button">Top 5 clientes que más productos han vendido</button>
+    <button class="btn btn-dark" (click)="reporteClienteMasPedido()" type="button">Top 10 clientes que más pedidos han realizado</button>
+    
+    <button class="btn btn-dark" (click)="reporteClienteMasProdVenta()" type="button">Top 10 clientes que más productos tienen a la venta.</button>
+
+
+  </div>

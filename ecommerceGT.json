@@ -1,0 +1,67 @@
+ecommerceGT
+
+//roles 1 usuario comun 2 paqueteria 3 adminsitrador
+
+//falta agregar direccion
+Usuario
+    -CUI
+    -nombre
+    -apellido
+    -password
+    -codigo_rol
+    -salario
+
+
+Producto
+    -Titulo
+    -Descripcion
+    -categoria
+    -Precio
+    -stock
+    -imagen
+    -cui_vendedor || vendedor 
+
+
+Tarjeta 
+    -nombre_tarjeta
+    -numero
+    -cvv
+    -fecha_exp
+    -cui_usuario
+
+<
+Categorias
+    -nombre_categoria
+
+
+
+
+//intermedio que seria la entrega 
+Venta_pendiente
+    -CUI || comprador
+    -total_gastado
+    -productos
+    -numero_tarjeta
+    -estado
+    -fecha_compra
+
+
+Venta
+    -CUI || comprador
+    -total_gastado
+    -productos
+    -numero_tarjeta
+    -fecha_entregada
+
+
+
+Producto_vendido
+    -Titulo
+    -Descripcion
+    -Categoria
+    -Cantidad
+    -Precio
+    -Ganancia_vendedor
+    -Ganancia_sistema
+    -Cui_vendedor || vendedor 
+    -Cui_comprador || comprador 

@@ -1,0 +1,23 @@
+<app-navbar-admin></app-navbar-admin>
+<button (click)="irForm()" >Nuevo Empleado</button>
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>CUI</th>
+        <th>Area</th>
+        <th>Salario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empleado of empleados; let i=index">
+        <td>{{empleado.nombre}} </td>
+        <td>{{empleado.apellido}} </td>
+        <td>{{empleado.cui}} </td>
+        <td>{{empleado.codigo_rol}} </td>
+        <td>{{"Q. "+empleado.salario}}        </td>
+
+      </tr>
+    </tbody>
+  </table>

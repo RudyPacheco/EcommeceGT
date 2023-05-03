@@ -1,0 +1,119 @@
+<section class="h-100 h-custom" >
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-8">
+                  <div class="p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                      <h1 class="fw-bold mb-0 text-black">Carrito</h1>
+                      <h6 class="mb-0 text-muted">{{ productosCarrito.length+" items"}}</h6>
+                    </div>
+
+
+                    <hr class="my-4">
+  
+                    <div *ngFor="let producto of productosCarrito; let i=index"  class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Shirt</h6>
+                        <h6 class="text-black mb-0">{{producto.titulo_producto}}</h6>
+                      </div>
+
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0">{{"Q. "+ producto.precio}}</h6>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                        <button class="btn btn-danger" (click)="quitarProd(i)" ><i class="fa-solid fa-x fa-lg"></i></button>
+                      </div>
+                      <hr class="my-4">
+                    </div>
+  
+                   
+
+  
+                    <hr class="my-4">
+                      <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
+                        <h5 class="fw-bold mb-0">Total:</h5>
+                        <h5 class="fw-bold mb-0">{{"Q. "+total}}</h5>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 bg-grey">
+            <div class="px-5 py-4">
+
+                <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Pago</h3>
+
+                <div class="mb-5">
+                  <button  class="btn btn-primary" (click)="limpiar()"> Ingresar Tarjeta Nueva</button>
+                  <div class="form-outline mb-5">
+                      
+                    <label class="form-label" for="typeText">Seleccione una Fecha</label>
+                    <input
+                    type="date"
+                    id="form3Example1m1"
+                    class="form-control form-control-lg"
+                    #fechaInput/>
+                  </div>
+                    <div class="form-outline mb-5">
+                      
+                        <label class="form-label" for="typeText">Seleccione una Tarjeta</label>
+                        <select  [(ngModel)]="indexTarjeta" [disabled]="tarjetas.length==0" (click)="selecTarjeta()"  class="form-control form-control-lg">
+                            <option *ngFor="let tarjeta of tarjetas, let i= index" value={{i}}>{{tarjeta.nombre_tarjeta}}</option>
+          
+                        </select>
+
+                      </div>
+    
+
+
+                  <div class="form-outline mb-5">
+                    <input type="text" [(ngModel)]="numeroTarjeta" name="numeroTarjeta"  class="form-control form-control-lg" siez="17"
+                      minlength="19" maxlength="19" />
+                    <label class="form-label" >Numero de tarjeta</label>
+                  </div>
+
+                  <div class="form-outline mb-5">
+                    <input type="text" [(ngModel)]="nombreTarjeta" name="nombreTarjeta" class="form-control form-control-lg" siez="17"
+                      value="John Smith" />
+                    <label class="form-label" >Nombre de la tarjeta</label>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-5">
+                      <div class="form-outline">
+                        <input type="text"  [(ngModel)]="fechaExp"  name="fechaExp" class="form-control form-control-lg" 
+                          size="7"  minlength="7" maxlength="7" />
+                        <label class="form-label" >Fecha Expiracion</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                      <div class="form-outline">
+                        <input type="password" [(ngModel)]="cvv" name="cvv"  class="form-control form-control-lg"
+                          value="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                        <label class="form-label" >Cvv</label>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="form-check">
+                        <input class="form-check-input" [(ngModel)]="guardar" name="guardar" type="checkbox"   checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Guardar Tarjeta
+                        </label>
+                      </div>
+                  <button type="button" (click)="generarCompra()" class="btn btn-primary btn-block btn-lg">Pagar</button>
+                  <h5 class="fw-bold mb-5" style="position: absolute; bottom: 0;">
+                    <a routerLink="/homepage"><i class="fas fa-angle-left me-2"></i>Regresar a comprar</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>

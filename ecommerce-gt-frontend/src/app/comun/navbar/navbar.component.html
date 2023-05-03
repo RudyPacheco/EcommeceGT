@@ -1,0 +1,40 @@
+<body>
+       <!-- Navigation-->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-4 px-lg-5">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="/homepage">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="/publicar">Publicar Producto</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="/misProductos">Mis Productos</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="/historialCompra">Historial Compra</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="/historialVenta">Historial Venta</a></li>
+                    
+                    
+                    
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      </form>
+                      <button class="btn btn-outline-light" type="submit">Search</button>
+                </ul>
+                
+                
+                <form class="d-flex">
+                    <button class="btn btn-outline-light" (click)="irCarrito()" type="submit">
+                        <i class="fa-solid fa-cart-shopping fa-beat"></i>
+                        Carrito
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">{{totalProd}}</span>
+                    </button>
+                </form>
+                <div class="dropdown dropdown-pull-right">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i> {{usuario.nombre}}
+                    </button>
+                    <ul class="dropdown-menu pull-right text-center" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="javascript: void(0);" (click)="salir()" >Cerrar Sesion</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+</body>

@@ -1,0 +1,32 @@
+<app-navbar-paqueteria></app-navbar-paqueteria>
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-1">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Seguimiento de Pedidos</h1>
+        </div>
+    </div>
+</header>
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th>Cui Comprador</th>
+        <th>total gastado</th>
+        <th>fecha compra</th>
+        <th>fecha de entrega</th>
+        <th>Accion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pendiente of pendientes; let i=index">
+        <td>{{pendiente.cui_comprador}} </td>
+        <td>{{"Q. "+pendiente.total_gastado}}        </td>
+        <td>{{pendiente.fecha_compra}}</td>
+        <td>{{pendiente.fecha_entrega}}</td>
+        <td>
+          <button type="button" (click)="entregar(i)" class="btn btn-link btn-sm btn-rounded">
+            Entregar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

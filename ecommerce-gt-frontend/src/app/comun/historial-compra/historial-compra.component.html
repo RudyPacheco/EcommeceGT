@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-1">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Historial Compras</h1>
+        </div>
+    </div>
+</header>
+<h2>Total Gastado : {{totalGastado}}</h2>
+<table class="table align-middle mb-0 bg-white">
+  <thead class="bg-light">
+    <tr>
+      <th>Titulo</th>
+      <th>Descripcion</th>
+      <th>Categoria</th>
+      <th>Precio</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos; let i=index">
+      <td>{{producto.titulo_producto}} </td>
+      <td>{{producto.descripcion}} </td>
+      <td>{{producto.categoria}} </td>
+      <td>{{"Q. "+producto.precio}}        </td>
+    </tr>
+  </tbody>
+</table>
+   

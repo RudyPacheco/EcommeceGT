@@ -1,0 +1,48 @@
+<app-navbar-admin></app-navbar-admin>
+<div class="form-outline mb-5">
+                      
+    <label class="form-label" for="typeText">Fecha Inicial</label>
+    <input
+    type="date"
+    id="form3Example1m1"
+    class="form-control form-control-lg"
+    [(ngModel)]="fechaIncial1"/>
+  </div>
+  <div class="form-outline mb-5">
+                      
+    <label class="form-label" for="typeText">Fecha Final</label>
+    <input
+    type="date"
+    id="form3Example1m1"
+    class="form-control form-control-lg"
+    [(ngModel)]="fechaFinalL" />
+  </div>
+
+  <button (click)="generarReporte()" >Generar</button>
+
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-1">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Top 10 clientes que más pedidos han realizado</h1>
+        </div>
+    </div>
+</header>
+<table class="table align-middle mb-0 bg-white">
+  <thead class="bg-light">
+    <tr>
+      <th>CUI</th>
+      <th>Cantidad Producto a la venta</th>
+      <th>Categoria</th>
+      <th>Precio</th>
+
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos; let i=index">
+      <td>{{producto.cui_comprador}} </td>
+
+      <td>{{producto.estado}}</td>
+    </tr>
+  </tbody>
+</table>

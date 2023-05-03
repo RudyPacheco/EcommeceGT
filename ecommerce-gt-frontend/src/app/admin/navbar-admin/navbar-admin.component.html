@@ -1,0 +1,26 @@
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <div class="container px-4 px-lg-5">
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                 <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="/adminHome">Inicio</a></li>
+                 <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="/empleados">Empleados</a></li>
+                 <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="/reportes">Reportes</a></li>
+                 
+             </ul>
+             
+             
+
+             <div class="dropdown dropdown-pull-right">
+                 <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user"></i>  {{usuario.nombre}}
+                 </button>
+                 <ul class="dropdown-menu pull-right text-center" aria-labelledby="dropdownMenuButton1">
+                   <li><a class="dropdown-item" href="javascript: void(0);" (click)="salir()">Cerrar Sesion</a></li>
+                 </ul>
+               </div>
+         </div>
+     </div>
+ </nav>
+</body>

@@ -1,0 +1,27 @@
+<app-navbar-admin></app-navbar-admin>
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-1">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Mis Productos</h1>
+        </div>
+    </div>
+</header>
+<table class="table align-middle mb-0 bg-white">
+  <thead class="bg-light">
+    <tr>
+      <th>CUI</th>
+      <th>Cantidad Producto a la venta</th>
+      <th>Categoria</th>
+      <th>Precio</th>
+
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos; let i=index">
+      <td>{{producto.cui_vendedor}} </td>
+
+      <td>{{producto.stock}}</td>
+    </tr>
+  </tbody>
+</table>
