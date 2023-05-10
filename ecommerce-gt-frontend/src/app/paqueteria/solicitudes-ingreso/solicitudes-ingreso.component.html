@@ -14,7 +14,7 @@
       <th>Categoria</th>
       <th>Precio</th>
       <th>Cui vendedor</th>
-      <th>Nombre vendedor</th>
+
       
     </tr>
   </thead>
@@ -25,9 +25,8 @@
       <td>{{solicitud.categoria}} </td>
       <td>{{"Q. "+solicitud.precio}}        </td>
       <td>{{solicitud.cui_vendedor}}</td>
-      <td>{{""}}</td>
       <td>
-        <button type="button" (click)="aceptarProducto(i)" class="btn btn-link btn-sm btn-rounded">
+        <button type="button" (click)="aceptarProducto(i)" class="btn btn-success">
           Aceptar
         </button>
       </td>

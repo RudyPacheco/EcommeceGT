@@ -17,6 +17,7 @@ router.post('/usuario-producto-publicado',ControllerProducto.listarProductoPubli
 router.get('/report-cliente-mas-prod-venta',ControllerProducto.clieneMasProductoVenta)
 
 router.post('/actualizar',ControllerProducto.actualizarStock)
+router.post('/sumar',ControllerProducto.sumarStock)
 
 router.post('/save-img-producto', ControllerProducto.upload.single('imagen'), function(req, res) {
     const fileName = req.file.originalname;

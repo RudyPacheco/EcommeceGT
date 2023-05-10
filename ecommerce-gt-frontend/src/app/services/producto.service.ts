@@ -61,6 +61,10 @@ export class productoService{
       return this.httpClient.post<producto>(this.APY_URL+"actualizar",producto)
     }
 
+    public sumarStock(producto:producto):Observable<producto>{
+      return this.httpClient.post<producto>(this.APY_URL+"sumar",producto)
+    }
+
 
     public usuarioSolicitudes(usuario:usuario):Observable<producto[]>{
       return this.httpClient.post<producto[]>(this.APY_URL+"usuario-producto-solicitud",usuario)

@@ -1,0 +1,143 @@
+//categorias
+
+db.categorias.insertOne({
+    "nombre_categoria":"Tecnologia"
+})
+
+db.categorias.insertOne({
+    "nombre_categoria":"Hogar"
+})
+
+
+db.categorias.insertOne({
+    "nombre_categoria":"Académico"
+})
+
+
+db.categorias.insertOne({
+    "nombre_categoria":"Literatura"
+})
+
+
+db.categorias.insertOne({
+    "nombre_categoria":"Decoración"
+})
+
+
+db.categorias.insertOne({
+    "nombre_categoria":"Otros"
+})
+
+
+
+
+
+
+// 5 usuarios comunes
+
+
+
+db.usuarios.insertOne(
+{
+    "cui":1234567891234,
+    "nombre":"Sofia",
+    "apellido":"Moreno",
+    "password":"123password",
+    "codigo_rol":1,
+    "salario":0
+}
+
+)
+
+db.usuarios.insertOne(
+{
+    "cui":1231234564567,
+    "nombre":"Carlos",
+    "apellido":"Gomez",
+    "password":"123password",
+    "codigo_rol":1,
+    "salario":0
+}
+
+)
+
+db.usuarios.insertOne(
+{
+    "cui":7897894564561,
+    "nombre":"Luis",
+    "apellido":"Martinez",
+    "password":"123password",
+    "codigo_rol":1,
+    "salario":0
+}
+
+)
+
+db.usuarios.insertOne(
+{
+    "cui":4738291047263,
+    "nombre":"Oscar",
+    "apellido":"Perez",
+    "password":"123password",
+    "codigo_rol":1,
+    "salario":0
+}
+
+)
+
+
+db.usuarios.insertOne(
+{
+    "cui":8201947192874,
+    "nombre":"Eduardo",
+    "apellido":"Morales",
+    "password":"123password",
+    "codigo_rol":1,
+    "salario":0
+}
+
+)
+
+
+// 2 usuarios de paqueteria
+
+db.usuarios.insertOne(
+{
+    "cui":3216549873216,
+    "nombre":"Ricardo",
+    "apellido":"Hernandez",
+    "password":"123password",
+    "codigo_rol":2,
+    "salario":4000
+}
+
+)
+
+db.usuarios.insertOne(
+{
+    "cui":6546549876541,
+    "nombre":"Mario",
+    "apellido":"Cruz",
+    "password":"123password",
+    "codigo_rol":2,
+    "salario":4500
+}
+
+)
+
+
+//usuario administrador
+
+db.usuarios.insert(
+{
+    "cui":3224985460801,
+    "nombre":"Rudy Adolfo",
+    "apellido":"Pacheco Pacheco",
+    "password":"123password",
+    "codigo_rol":3,
+    "salario":6000
+}
+
+)
+
+

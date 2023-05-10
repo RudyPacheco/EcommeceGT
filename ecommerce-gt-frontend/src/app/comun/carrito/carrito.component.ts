@@ -158,6 +158,7 @@ generarCompra(){
   
   }else{
     console.log("carrito vacio");
+    this.popErro();
   }
  
 
@@ -190,12 +191,26 @@ public actualizarStock(){
 }
 
 
+public vaciarCarrito(){
+  this.carrtioService.productosCarrito = [];
+  this.productosCarrito=[];
+}
+
 
 public popAfirmation(){
   Swal.fire(
     'Compra Realizada',
   )
 }
+
+public popErro(){
+  Swal.fire(
+    'Error',
+    'El carrito esta vacio',
+    
+  )
+}
+
 
 
 

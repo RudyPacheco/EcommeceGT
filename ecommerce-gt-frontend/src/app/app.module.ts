@@ -30,6 +30,7 @@ import { TableTop10ClientesMasPedidosComponent } from './admin/table-top10-clien
 import { TableTop10ProdMasVendidoComponent } from './admin/table-top10-prod-mas-vendido/table-top10-prod-mas-vendido.component';
 import { TableTopClienteMasVentasComponent } from './admin/table-top-cliente-mas-ventas/table-top-cliente-mas-ventas.component';
 import { TableTopClienteMasGananciaComponent } from './admin/table-top-cliente-mas-ganancia/table-top-cliente-mas-ganancia.component';
+import { FormAgregarComponent } from './comun/form-agregar/form-agregar.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { TableTopClienteMasGananciaComponent } from './admin/table-top-cliente-m
     TableTop10ClientesMasPedidosComponent,
     TableTop10ProdMasVendidoComponent,
     TableTopClienteMasVentasComponent,
-    TableTopClienteMasGananciaComponent
+    TableTopClienteMasGananciaComponent,
+    FormAgregarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-paqueteria',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-paqueteria.component.css']
 })
 export class HomePaqueteriaComponent {
+  
+  constructor(private router:Router){
+
+  }
+
+  irSolicitudes(){
+    this.router.navigate(['solicitudes'])
+  }
+
+  irSeguimiento(){
+    this.router.navigate(['seguimiento'])
+  }
 
 }

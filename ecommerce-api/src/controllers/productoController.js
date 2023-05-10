@@ -28,14 +28,14 @@ const listarProdAceptado = async(req,res)=>{
 }
 
 const listarProductoPublicado = async(req,res)=>{
-  const registros = await Producto.find({cui_vendedor:req.query.cui,aceptado:true});
+  const registros = await Producto.find({cui_vendedor:req.body.cui,aceptado:true});
   res.json(registros);
 
 } 
 
 
 const listarProductoSolicitud = async(req,res)=>{
-  const registros = await Producto.find({cui_vendedor:req.query.cui,aceptado:false});
+  const registros = await Producto.find({cui_vendedor:req.body.cui,aceptado:false});
   res.json(registros);
 
 } 
@@ -70,6 +70,25 @@ const actualizarStock = async(req,res)=>{
   console.log("---------")
   
     let nuevoTotal = producto.stock-1;
+
+
+    const updateStock = await Producto.findByIdAndUpdate(req.body._id,{stock:nuevoTotal});
+    res.json(updateStock);
+
+
+}
+
+const sumarStock = async(req,res)=>{
+  console.log(req.body)
+  
+  const producto = await Producto.findById(req.body._id);
+  console.log("-------------")
+  console.log(producto)
+  console.log("---------")
+  console.log(producto.stock)
+  console.log("---------")
+  
+    let nuevoTotal = producto.stock+req.body.stock;
 
 
     const updateStock = await Producto.findByIdAndUpdate(req.body._id,{stock:nuevoTotal});
@@ -127,4 +146,5 @@ const storage = multer.diskStorage({
     listarProductoPublicado:listarProductoPublicado,
     listarProductoSolicitud:listarProductoSolicitud,
     clieneMasProductoVenta:clieneMasProductoVenta,
+    sumarStock:sumarStock,
 }

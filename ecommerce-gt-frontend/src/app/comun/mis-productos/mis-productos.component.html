@@ -13,6 +13,7 @@
       <th>Descripcion</th>
       <th>Categoria</th>
       <th>Precio</th>
+      <th>Existencia</th>
 
       
     </tr>
@@ -24,6 +25,7 @@
       <td>{{producto.categoria}} </td>
       <td>{{"Q. "+producto.precio}}        </td>
       <td>{{producto.stock}}</td>
+      <td><button  class="btn btn-success" (click)="formulario(i)" >Agregar Existencia</button></td>
     </tr>
   </tbody>
 </table>
@@ -35,6 +37,7 @@
             <th>Descripcion</th>
             <th>Categoria</th>
             <th>Precio</th>
+            <th>Existencia</th>
       
             
           </tr>

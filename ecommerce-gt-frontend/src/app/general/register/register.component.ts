@@ -40,6 +40,9 @@ export class RegisterComponent {
     }) 
   }
 
+  public regresarInicio(){
+    this.router.navigate(['login']);
+  }
 
   public popAfirmation(){
     Swal.fire(

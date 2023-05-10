@@ -1,0 +1,742 @@
+
+
+  db.productos.insertOne(
+    {
+    "titulo_producto": 'Cargador Iphone',
+    "descripcion": 'cargador de 20w lightning',
+    "categoria": 'Tecnologia',
+    "precio": 300,
+    "stock": 10,
+    "imagen": '/images/img-productos/accesorios1.jpg',
+    "cui_vendedor": 1234567891234,
+    "aceptado": true
+    }
+    
+    )
+  
+
+
+
+    db.productos.insertOne(
+      {
+     "titulo_producto": 'Escalera retractil',
+    "descripcion": 'Escalera de 5m retractil',
+    "categoria": 'Hogar',
+    "precio": 400,
+    "stock": 5,
+    "imagen": '/images/img-productos/escalera.jpg',
+    "cui_vendedor": 1234567891234,
+    "aceptado": true
+      }
+      
+      )
+      db.productos.insertOne(
+        {
+          "titulo_producto": 'gafas Celine',
+          "descripcion": 'gafas de sol para mujer marca Celine',
+          "categoria": 'Otros',
+          "precio": 250,
+          "stock": 3,
+          "imagen": '/images/img-productos/gafas1.jpg',
+          "cui_vendedor": 1234567891234,
+          "aceptado": true
+        }
+        
+        )
+  
+        db.productos.insertOne(
+          {
+            "titulo_producto": 'Lavadora ',
+            "descripcion": 'Lavadora marca hisense capacidad de 19 lb',
+            "categoria": 'Hogar',
+            "precio": 2500,
+            "stock": 1,
+            "imagen": '/images/img-productos/lavadora1.jpg',
+            "cui_vendedor": 1234567891234,
+            "aceptado": true
+          }
+          
+          )
+    
+          db.productos.insertOne(
+            {
+              "titulo_producto": 'Moto Harley Davidson',
+              "descripcion": 'moto marca harley davidson',
+              "categoria": 'Otros',
+              "precio": 80000,
+              "stock": 1,
+              "imagen": '/images/img-productos/moto1.jpg',
+              "cui_vendedor": 1234567891234,
+              "aceptado": true
+            }
+            
+            )
+      
+
+            db.productos.insertOne(
+              {
+                "titulo_producto": 'Organo',
+                "descripcion": 'Organo de 2 niveles',
+                "categoria": 'Hogar',
+                "precio": 12000,
+                "stock": 1,
+                "imagen": '/images/img-productos/organo.jpg',
+                "cui_vendedor": 1234567891234,
+                "aceptado": true
+              }
+              
+              )
+ 
+              db.productos.insertOne(
+                {
+                  "titulo_producto": 'Pc gamer',
+                  "descripcion": 'pc gamer con gtx 16660 , intel i7 de 9na gen y 16 gb de ram',
+                  "categoria": 'Tecnologia',
+                  "precio": 8000,
+                  "stock": 3,
+                  "imagen": '/images/img-productos/pcgamer.jpg',
+                  "cui_vendedor": 1234567891234,
+                  "aceptado": true
+                }
+                
+                )
+          
+                db.productos.insertOne(
+                  {
+                    "titulo_producto": 'Porsche de juguete',
+    "descripcion": 'porsche 918 spyder de juguete',
+    "categoria": 'Decoración',
+    "precio": 250,
+    "stock": 5,
+    "imagen": '/images/img-productos/porsche.jpg',
+    "cui_vendedor": 1234567891234,
+    "aceptado": true
+                  }
+                  
+                  )
+
+                  db.productos.insertOne(
+                    {
+                      "titulo_producto": 'Figura Religiosa',
+                      "descripcion": 'Figura de San Antonio',
+                      "categoria": 'Decoración',
+                      "precio": 500,
+                      "stock": 1,
+                      "imagen": '/images/img-productos/sanantonio.jpg',
+                      "cui_vendedor": 1234567891234,
+                      "aceptado": true
+                    }
+                    
+                    )
+                    db.productos.insertOne(
+                      {
+                        "titulo_producto": 'Secadora de ropa',
+                        "descripcion": 'Secadora de ropa marca AEG , capacidad para 19 libras ',
+                        "categoria": 'Hogar',
+                        "precio": 1800,
+                        "stock": 1,
+                        "imagen": '/images/img-productos/secadora.jpg',
+                        "cui_vendedor": 1234567891234,
+                        "aceptado": true
+                      }
+                      
+                      )
+
+                      db.productos.insertOne(
+                        {
+                          "titulo_producto": 'Camisola Argentina',
+    "descripcion": 'Camisola de argentina campeón del mundial',
+    "categoria": 'Otros',
+    "precio": 950,
+    "stock": 2,
+    "imagen": '/images/img-productos/argmundial.jpg',
+    "cui_vendedor": 1231234564567,
+    "aceptado": true
+                        }
+                        
+                        )
+
+
+                        db.productos.insertOne(
+                          {
+                            "titulo_producto": 'Aspiradora',
+                            "descripcion": 'Aspiradora 3 gal 1hp',
+                            "categoria": 'Hogar',
+                            "precio": 2300,
+                            "stock": 1,
+                            "imagen": '/images/img-productos/aspiradora1.jpg',
+                            "cui_vendedor": 1231234564567,
+                            "aceptado": true
+                          }
+                          
+                          )
+                          db.productos.insertOne(
+                            {
+                              "titulo_producto": 'Bicicleta de montaña',
+    "descripcion": 'Bicicleta de montaña',
+    "categoria": 'Otros',
+    "precio": 4500,
+    "stock": 1,
+    "imagen": '/images/img-productos/bicicleta1.jpg',
+    "cui_vendedor": 1231234564567,
+    "aceptado": true
+                            }
+                            
+                            )
+
+                            db.productos.insertOne(
+                              {
+                                "titulo_producto": 'Plantas de cactus',
+                                "descripcion": 'plantas de cactus en macetas',
+                                "categoria": 'Decoración',
+                                "precio": 50,
+                                "stock": 10,
+                                "imagen": '/images/img-productos/cactus.jpg',
+                                "cui_vendedor": 1231234564567,
+                                "aceptado": true
+                              }
+                              
+                              )
+
+
+
+                              db.productos.insertOne(
+                                {
+                                  "titulo_producto": 'Cierra Circular',
+                                  "descripcion": 'Cierra circular marca makita',
+                                  "categoria": 'Otros',
+                                  "precio": 1500,
+                                  "stock": 4,
+                                  "imagen": '/images/img-productos/cierracircular.png',
+                                  "cui_vendedor": 1231234564567,
+                                  "aceptado": true
+                                }
+                                
+                                )
+
+
+                                db.productos.insertOne(
+                                  {
+                                    "titulo_producto": 'iphone 13',
+                                    "descripcion": 'iphone 13 128 gb color azul',
+                                    "categoria": 'Tecnologia',
+                                    "precio": 4000,
+                                    "stock": 1,
+                                    "imagen": '/images/img-productos/iphone131.jpg',
+                                    "cui_vendedor": 1231234564567,
+                                    "aceptado": true
+                                  }
+                                  
+                                  )
+
+                                  db.productos.insertOne(
+                                    {
+                                      "titulo_producto": 'Kit herramienta giratorio',
+                                      "descripcion": 'Kit de herramientas multigiratorias',
+                                      "categoria": 'Otros',
+                                      "precio": 2000,
+                                      "stock": 2,
+                                      "imagen": '/images/img-productos/multigiratoria.jpg',
+                                      "cui_vendedor": 1231234564567,
+                                      "aceptado": true
+                                    }
+                                    
+                                    )
+
+                                    db.productos.insertOne(
+                                      {
+                                        "titulo_producto": 'Juego spiderman PS5',
+    "descripcion": 'juego de spiderman para Ps5 version fisica',
+    "categoria": 'Tecnologia',
+    "precio": 500,
+    "stock": 3,
+    "imagen": '/images/img-productos/ps5spiderman.jpg',
+    "cui_vendedor": 1231234564567,
+    "aceptado": true
+                                      }
+                                      
+                                      )
+
+ 
+                                      db.productos.insertOne(
+                                        {
+                                          "titulo_producto": 'Refigerador de red bull',
+                                          "descripcion": 'Refrigerador pequeño de red bull',
+                                          "categoria": 'Hogar',
+                                          "precio": 1400,
+                                          "stock": 1,
+                                          "imagen": '/images/img-productos/refriredbull.jpg',
+                                          "cui_vendedor": 1231234564567,
+                                          "aceptado": true
+                                        }
+                                        
+                                        )
+
+
+
+
+    db.productos.insertOne(
+      {
+     "titulo_producto": 'Sudaderos',
+    "descripcion": 'Sudaderos en talla unica',
+    "categoria": 'Otros',
+    "precio": 150,
+    "stock": 10,
+    "imagen": '/images/img-productos/sudaderos1.jpg',
+    "cui_vendedor": 1231234564567,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+      "titulo_producto": 'Control para Ps4',
+    "descripcion": 'control para ps4 dualshock',
+    "categoria": 'Tecnologia',
+    "precio": 350,
+    "stock": 2,
+    "imagen": '/images/img-productos/controlps4.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+
+
+     db.productos.insertOne(
+      {
+        "titulo_producto": 'Utensilios de cocina',
+    "descripcion": 'Juego de utensilios de cocina',
+    "categoria": 'Hogar',
+    "precio": 600,
+    "stock": 3,
+    "imagen": '/images/img-productos/juegoutensilios.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+    db.productos.insertOne(
+      {
+       "titulo_producto": 'Vajillas',
+    "descripcion": 'Juego de vajillas',
+    "categoria": 'Hogar',
+    "precio": 700,
+    "stock": 2,
+    "imagen": '/images/img-productos/juegovajillas.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+        "titulo_producto": 'Mesa de madera',
+    "descripcion": 'Mesa de madera retractil',
+    "categoria": 'Hogar',
+    "precio": 450,
+    "stock": 5,
+    "imagen": '/images/img-productos/mesasmadera.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+
+
+     db.productos.insertOne(
+      {
+       "titulo_producto": 'Pachones',
+    "descripcion": 'kit de 3 pachones',
+    "categoria": 'Hogar',
+    "precio": 150,
+    "stock": 10,
+    "imagen": '/images/img-productos/pachones.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+        "titulo_producto": 'Premios para perro',
+    "descripcion": 'Premios para perro',
+    "categoria": 'Otros',
+    "precio": 35,
+    "stock": 5,
+    "imagen": '/images/img-productos/premiosperro.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+
+
+       db.productos.insertOne(
+      {
+      "titulo_producto": 'Rtx 5700',
+    "descripcion": 'Grafica Rtx 5700',
+    "categoria": 'Tecnologia',
+    "precio": 2600,
+    "stock": 1,
+    "imagen": '/images/img-productos/rtx5700.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+       "titulo_producto": 'S22 ultra',
+    "descripcion": 'S22 ultra color naranja , 256 gb , 8 gb ram',
+    "categoria": 'Tecnologia',
+    "precio": 12000,
+    "stock": 1,
+    "imagen": '/images/img-productos/s22ultra.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+ 
+    db.productos.insertOne(
+      {
+        "titulo_producto": 'Silla gamer',
+    "descripcion": 'Silla gamer marca dxracer',
+    "categoria": 'Hogar',
+    "precio": 2500,
+    "stock": 1,
+    "imagen": '/images/img-productos/sillgamer.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+        "titulo_producto": 'Smarwatchs',
+    "descripcion": 'Smartwachs',
+    "categoria": 'Tecnologia',
+    "precio": 300,
+    "stock": 10,
+    "imagen": '/images/img-productos/smartwatch.jpg',
+    "cui_vendedor": 7897894564561,
+    "aceptado": true
+      }
+      
+      )
+ 
+      db.productos.insertOne(
+      {
+        "titulo_producto": 'Boligrafos',
+    "descripcion": 'Boligrafos',
+    "categoria": 'Literatura',
+    "precio": 75,
+    "stock": 15,
+    "imagen": '/images/img-productos/boligrafos.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+  
+    db.productos.insertOne(
+      {
+      "titulo_producto": 'Bateria Magnum',
+    "descripcion": 'Bateria Magnum para vehiculos',
+    "categoria": 'Otros',
+    "precio": 1500,
+    "stock": 2,
+    "imagen": '/images/img-productos/bateriamagnum.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+      db.productos.insertOne(
+      {
+      "titulo_producto": 'Cuchillas para rasusrar',
+    "descripcion": 'pack 8 Cuchillas marca gillete intercambiables',
+    "categoria": 'Hogar',
+    "precio": 50,
+    "stock": 5,
+    "imagen": '/images/img-productos/cuchillasrasurar.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+     "titulo_producto": 'Enjuague bocal',
+    "descripcion": 'Enjuague bocal marca listerine',
+    "categoria": 'Hogar',
+    "precio": 40,
+    "stock": 8,
+    "imagen": '/images/img-productos/enjuague.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+
+      db.productos.insertOne(
+      {
+       "titulo_producto": 'Iphone 14 pro max',
+    "descripcion": 'Iphone 14 pro max de 128 gb color negro',
+    "categoria": 'Tecnologia',
+    "precio": 13999,
+    "stock": 5,
+    "imagen": '/images/img-productos/iphone14promax.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+
+    db.productos.insertOne(
+      {
+       "titulo_producto": 'Marcadores',
+    "descripcion": 'bolso de marcadores profesionales',
+    "categoria": 'Académico',
+    "precio": 250,
+    "stock": 3,
+    "imagen": '/images/img-productos/marcadores.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+
+     db.productos.insertOne(
+      {
+       "titulo_producto": 'Baterias AA',
+    "descripcion": 'pack de 4 baterias AA marca duracell',
+    "categoria": 'Hogar',
+    "precio": 75,
+    "stock": 7,
+    "imagen": '/images/img-productos/packbateria.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+     db.productos.insertOne(
+      {
+        "titulo_producto": 'Cepillos',
+    "descripcion": 'paquete de  6 cepillos',
+    "categoria": 'Hogar',
+    "precio": 50,
+    "stock": 6,
+    "imagen": '/images/img-productos/packcepillos.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+
+    db.productos.insertOne(
+      {
+        "titulo_producto": 'Paquetes de coca cola',
+    "descripcion": 'Paquetes de 16 coca colas de 500 ml',
+    "categoria": 'Otros',
+    "precio": 90,
+    "stock": 10,
+    "imagen": '/images/img-productos/packCoca.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+          db.productos.insertOne(
+      {
+       "titulo_producto": 'Paquetes de coca cola',
+    "descripcion": 'Paquetes de 16 coca colas de 500 ml',
+    "categoria": 'Otros',
+    "precio": 90,
+    "stock": 10,
+    "imagen": '/images/img-productos/packCoca.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+     "titulo_producto": 'Kit maquina rasuradora',
+    "descripcion": 'Maquina rasuradora con varios números de cabeza',
+    "categoria": 'Hogar',
+    "precio": 900,
+    "stock": 2,
+    "imagen": '/images/img-productos/packmaquina.jpg',
+    "cui_vendedor": 4738291047263,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+      "titulo_producto": 'Libro de álgebra',
+    "descripcion": 'libro de algebra de baldor',
+    "categoria": 'Literatura',
+    "precio": 100,
+    "stock": 15,
+    "imagen": '/images/img-productos/algebra.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+       "titulo_producto": 'Libro coraline',
+    "descripcion": 'Libro coraline',
+    "categoria": 'Literatura',
+    "precio": 250,
+    "stock": 4,
+    "imagen": '/images/img-productos/coraline.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+    db.productos.insertOne(
+      {
+       "titulo_producto": 'Libro Don Quijote',
+    "descripcion": 'Libro Don Quijote',
+    "categoria": 'Literatura',
+    "precio": 350,
+    "stock": 7,
+    "imagen": '/images/img-productos/donquijote.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+    db.productos.insertOne(
+      {
+       "titulo_producto": 'Fuente',
+    "descripcion": 'Fuente de agua para interior',
+    "categoria": 'Decoración',
+    "precio": 500,
+    "stock": 3,
+    "imagen": '/images/img-productos/fuente.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+    db.productos.insertOne(
+      {
+       "titulo_producto": 'Lampara',
+    "descripcion": 'lampara para interior',
+    "categoria": 'Decoración',
+    "precio": 200,
+    "stock": 5,
+    "imagen": '/images/img-productos/lampara.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+      
+      db.productos.insertOne(
+      {
+     "titulo_producto": 'Paquete de lapices',
+    "descripcion": 'paquete de 12 lapices profesionales',
+    "categoria": 'Académico',
+    "precio": 100,
+    "stock": 10,
+    "imagen": '/images/img-productos/lapiz.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+
+     db.productos.insertOne(
+      {
+     "titulo_producto": 'Libro Mil y una noches',
+    "descripcion": 'Libro Mil y una noches',
+    "categoria": 'Literatura',
+    "precio": 250,
+    "stock": 2,
+    "imagen": '/images/img-productos/milnoches.jpeg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+       "titulo_producto": 'Planta para interior',
+    "descripcion": 'Planta falsa para interior',
+    "categoria": 'Decoración',
+    "precio": 150,
+    "stock": 2,
+    "imagen": '/images/img-productos/plantafalsa.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+
+    db.productos.insertOne(
+      {
+       "titulo_producto": 'Reloj',
+    "descripcion": 'Reloj de pared',
+    "categoria": 'Decoración',
+    "precio": 150,
+    "stock": 5,
+    "imagen": '/images/img-productos/relojpared.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+
+     db.productos.insertOne(
+      {
+        "titulo_producto": 'Tazon para decoracion',
+    "descripcion": 'Tazon para centro de mesa',
+    "categoria": 'Decoración',
+    "precio": 75,
+    "stock": 5,
+    "imagen": '/images/img-productos/tazoncentro.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )
+
+
+    db.productos.insertOne(
+      {
+        "titulo_producto": 'Samsung A32',
+    "descripcion": 'Telefono Samsung a32 128 gb',
+    "categoria": 'Tecnologia',
+    "precio": 2100,
+    "stock": 2,
+    "imagen": '/images/img-productos/a32.jpg',
+    "cui_vendedor": 8201947192874,
+    "aceptado": true
+      }
+      
+      )

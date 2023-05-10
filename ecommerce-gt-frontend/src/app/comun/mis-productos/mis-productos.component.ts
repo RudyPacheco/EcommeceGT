@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { producto } from 'src/app/models/producto';
 import { loginServices } from 'src/app/services/login.service';
 import { productoService } from 'src/app/services/producto.service';
@@ -14,7 +15,7 @@ export class MisProductosComponent {
   productosSolicitados:producto[]=[];
 
 
-  constructor(private productoService:productoService,private loginService:loginServices){
+  constructor(private productoService:productoService,private loginService:loginServices,private rotuer:Router){
     this.productoService.usuarioPublicado(this.loginService.usuarioLog).subscribe((lista:producto[])=>{
       this.productosPublicados=lista
     })
@@ -25,6 +26,16 @@ export class MisProductosComponent {
 
 
   }
+
+
+  formulario(index:number){
+    this.productoService.seleccionarProducto(this.productosPublicados[index]);
+    this.rotuer.navigate(['formAgregar']);
+
+  }
+   
+
+
 
 
 }

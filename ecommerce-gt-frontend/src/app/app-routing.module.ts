@@ -11,6 +11,7 @@ import { TableTop10ClientesMasProdventaComponent } from './admin/table-top10-cli
 import { TableTop10ProdMasVendidoComponent } from './admin/table-top10-prod-mas-vendido/table-top10-prod-mas-vendido.component';
 import { CarritoComponent } from './comun/carrito/carrito.component';
 import { DetalleProductoComponent } from './comun/detalle-producto/detalle-producto.component';
+import { FormAgregarComponent } from './comun/form-agregar/form-agregar.component';
 import { FormPublicarComponent } from './comun/form-publicar/form-publicar.component';
 import { HistorialCompraComponent } from './comun/historial-compra/historial-compra.component';
 import { HistorialVentaComponent } from './comun/historial-venta/historial-venta.component';
@@ -45,7 +46,8 @@ const routes: Routes = [
   {path:'clienteMasPedido',component:TableTop10ClientesMasPedidosComponent},
   {path:'prodMasVendido',component:TableTop10ProdMasVendidoComponent},
   {path:'clienteMasVentas',component:TableTopClienteMasVentasComponent},
-  {path:'clienteMasGanancia',component:TableTopClienteMasGananciaComponent}
+  {path:'clienteMasGanancia',component:TableTopClienteMasGananciaComponent},
+  {path:'formAgregar',component:FormAgregarComponent}
 ];
 
 @NgModule({
